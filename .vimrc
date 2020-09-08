@@ -119,12 +119,12 @@ autocmd BufNewFile *.cpp,*.[ch],*.sh,*.java exec ":call SetTitle()"
 func SetTitle() 
     "如果文件类型为.sh文件 
     if &filetype == 'sh' 
-        call append(line("."), "\# Copyright 2019 Mobvoi Inc. All Rights Reserved.") 
+        call append(line("."), "\# Copyright 2020Mobvoi Inc. All Rights Reserved.") 
         call append(line(".")+1, "\# Author: yongqiangli@mobvoi.com yongqiangli") 
         call append(line(".")+2, "\#!/bin/bash") 
         call append(line(".")+3, "") 
     else 
-        call append(line("."), "   > Copyright 2019 Mobvoi Inc. All Rights Reserved.") 
+        call append(line("."), "   > Copyright 2020 Mobvoi Inc. All Rights Reserved.") 
         call append(line(".")+1, "    > Author: yongqiangli@mobvoi.com yongqiangli") 
         call append(line(".")+2, "")
     endif
